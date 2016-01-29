@@ -1,0 +1,39 @@
+body{
+	background-color: #ebe7df;
+	font-family: 'Open Sans', sans-serif;
+}
+.wrap{
+	width: 960px;
+	margin: auto;
+}
+.topbar1{
+	background-color: #242424;
+	height: 45px;
+}
+.nom{
+	display: inline-block;
+}
+.logo{
+	color: #57c5a0;
+	line-height: 45px;
+	font-size: 27px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.topbar1-right{
+	float: right;
+}
+.search, .user{
+	display: inline-block;
+}
+.fa-search{
+	color: #7e7e7e;
+}
+.champrecherche{
+	background-color: #242424;
+	border: 0px;
+}
