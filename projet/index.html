@@ -5,15 +5,15 @@
 		<title>FOOSESHOES</title>
 		<meta name="viewport" content="initial-scale=1">
 		<link rel="stylesheet" href="style/reset.css">
-		<link rel="stylesheet" href="style/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style/style.css">
 	</head>
 	<body>
 		<header>
 			<div class="topbar1">
 				<div class="wrap">
-					<h1 class="nom"><a class="logo" href="">FOOSESHOES</a></h1>
+					<h1 class="nom"><a class="logo" href="#">FOOSESHOES</a></h1>
 					<div class="topbar1-right">
 						<div class="search">
 							<form>
@@ -22,7 +22,7 @@
 							</form>
 						</div>
 						<div class="user">
-							<p>LOGIN or REGISTER</p>
+							<a href="#">LOGIN or REGISTER</a>
 						</div>
 					</div>
 				</div>
@@ -32,30 +32,30 @@
 					<nav class="mainmenu">
 						<ul>
 							<li>
-								<a href="#">Home</a>
+								<a class="lienmenu" href="#">Home</a>
 							</li>
 							<li>
-								<a href="#">Products</a>
+								<a class="lienmenu" href="#">Products</a>
 							</li>
 							<li>
-								<a href="#">About</a>
+								<a class="lienmenu" href="#">About</a>
 							</li>
 							<li>
-								<a href="#">Pages</a>
+								<a class="lienmenu" href="#">Pages</a>
 							</li>
 							<li>
-								<a href="#">Blog</a>
+								<a class="lienmenu" href="#">Blog</a>
 							</li>
 							<li>
-								<a href="#">Contact</a>
+								<a class="lienmenu" href="#">Contact</a>
 							</li>
 						</ul>
 					</nav>
-					<div class="wishlist">
-						<p>* <span class="wishlist-counter">30</span></p>
-					</div>
 					<div class="cart">
-						<p>-\|/<span class="cart-counter">0</span></p>
+						<a href="#"><i class="fa fa-shopping-cart"></i><span class="user-box cart-counter">0</span></a>
+					</div>
+					<div class="wishlist">
+						<a href="#"><i class="fa fa-star-o"></i><span class="user-box wishlist-counter">30</span></a>
 					</div>
 				</div>
 			</div>
@@ -63,28 +63,36 @@
 		<div class="top">
 			<div class="slider">
 				<div class="wrap">
-					<img class="slider-image" src="img/slider.png" alt="Pink Shoes" />
-					<div class="details">
-						<div class="prix">
-							<p>$145,99</p>
+					<div class="slider2">
+						<img class="slider-image" src="img/slider.png" alt="Pink Shoes" />
+						<div class="details">
+							<div class="prix">
+								<p>$145,99</p>
+							</div>
+							<h1 class="slider-titre">Pink Shoes 2013 Collection</h1>
+							<p class="slider-description">Nunc non fermentum nunc. Sed ut ante  eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+							<nav class="slider-action">
+								<ul>
+									<li><a class="slider-action-icon" href="#"><i class="fa fa-eye"></i></a></li>
+									<li><a class="slider-action-icon" href="#"><i class="fa fa-star-o"></i></a></li>
+									<li><a class="slider-action-icon" href="#"><i class="fa fa-external-link"></i></a></li>
+									<li><a class="slider-action-icon" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+								</ul>
+							</nav>
 						</div>
-						<h1 class="slider-titre">Pink Shoes 2013 Collection</h1>
-						<p class="slider-description">Nunc non fermentum nunc. Sed ut ante  eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
-						<nav class="slider-action">
-							<ul>
-								<li><a href="#">&lt;o&gt;</a></li>
-								<li><a href="#">*</a></li>
-								<li><a href="#">[->]</a></li>
-								<li><a href="#">-\|/</a></li>
-							</ul>
-						</nav>
 					</div>
 				</div>
 			</div>
-			<nav class="slider-menu">
+			<div class="slider-menu">
 				<div class="wrap">
+					<div class="slider-position">
+						<span class="slider-item"></span><span class="slider-item"></span><span class="slider-item"></span><span class="slider-item"></span><span class="slider-item"></span>
+					</div>
+					<div class="slider-buttons">
+						<span class="slider-buttons-button"><h2>Pink Shoes</h2><h3>Now at $145,99</h3></span><span class="slider-buttons-button"><h2>Anna Field</h2><h3>Limited Edition</h3></span><span class="slider-buttons-button"><h2>Prada</h2><h3>Summer is coming</h3></span><span class="slider-buttons-button"><h2>Casadei</h2><h3>All Colors available</h3></span><span class="slider-buttons-button"><h2>Mellow Yellow</h2><h3>Free delivery</h3></span>
+					</div>
 				</div>
-			</nav>
+			</div>
 		</div>
 	</body>
 </html>
