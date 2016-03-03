@@ -6,6 +6,16 @@
 		<meta name="viewport" content="initial-scale=1">
 		<link rel="stylesheet" href="style/reset.css">
 		<link rel="stylesheet" href="style/style.css">
+		<script type="text/javascript">
+			function sliderin(el){
+				var position = document.getElementById(el);
+				position.style.backgroundColor = "#57c5a0";
+			}
+			function sliderout(el){
+				var position = document.getElementById(el);
+				position.style.backgroundColor = "black";
+			}
+		</script>
 	</head>
 	<body>
 		<header>
@@ -84,10 +94,10 @@
 			<div class="slider-menu">
 				<div class="wrap">
 					<div class="slider-position">
-						<span class="slider-item"></span><span class="slider-item"></span><span class="slider-item"></span><span class="slider-item"></span><span class="slider-item"></span>
+						<span class="slider-item" id="un"></span><span class="slider-item" id="deux"></span><span class="slider-item" id="trois"></span><span class="slider-item" id="quatre"></span><span class="slider-item" id="cinq"></span>
 					</div>
 					<div class="slider-buttons">
-						<span class="slider-buttons-button"><h2>Pink Shoes</h2><h3>Now at $145,99</h3></span><span class="slider-buttons-button"><h2>Anna Field</h2><h3>Limited Edition</h3></span><span class="slider-buttons-button"><h2>Prada</h2><h3>Summer is coming</h3></span><span class="slider-buttons-button"><h2>Casadei</h2><h3>All Colors available</h3></span><span class="slider-buttons-button"><h2>Mellow Yellow</h2><h3>Free delivery</h3></span>
+						<span class="slider-buttons-button" onmouseover="sliderin('un')" onmouseout="sliderout('un')"><h2>Pink Shoes</h2><h3>Now at $145,99</h3></span><span class="slider-buttons-button" onmouseover="sliderin('deux')" onmouseout="sliderout('deux')"><h2>Anna Field</h2><h3>Limited Edition</h3></span><span class="slider-buttons-button" onmouseover="sliderin('trois')" onmouseout="sliderout('trois')"><h2>Prada</h2><h3>Summer is coming</h3></span><span class="slider-buttons-button" onmouseover="sliderin('quatre')" onmouseout="sliderout('quatre')"><h2>Casadei</h2><h3>All Colors available</h3></span><span class="slider-buttons-button" onmouseover="sliderin('cinq')" onmouseout="sliderout('cinq')"><h2>Mellow Yellow</h2><h3>Free delivery</h3></span>
 					</div>
 				</div>
 			</div>
@@ -209,7 +219,7 @@
 							<p>APR</p>
 							<p>01</p>
 						</div>
-						<h2><a href="#">Nice and clean. The best for you blog!</a></h2>
+						<h2><a href="#" class="blognews-link">Nice and clean. The best for you blog!</a></h2>
 						<p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel</p>
 					</div>
 					<div class="blognews-new">
@@ -217,7 +227,7 @@
 							<p>APR</p>
 							<p>01</p>
 						</div>
-						<h2><a href="#">What an Ecommerce theme!</a></h2>
+						<h2><a href="#" class="blognews-link">What an Ecommerce theme!</a></h2>
 						<p>Vulputate vel nibh. Class aptent taciti sociosqu ad litora</p>
 					</div>
 				</div>
@@ -225,19 +235,29 @@
 		</div>
 		<footer>
 			<div class="wrap">
-				<div class="textwidget">
-					<h1>TEXT WIDGET</h1>
-					<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-				</div>
-				<div class="twitterwidget">
-					<h1>TWITTER WIDGET</h1>
-					<p>@ericafustero Why thank you. Your work looks awesome by the way! @treemelody</p>
-					<p>19 days ago</p>
-					<p>@roymarvelous You can seek a refund through TF if it is not as advertised - but it is :)</p>
-					<p>21 days ago</p>
-				</div>
-				<div class="flickrwidget">
-					<h1>FLICKR WIDGET</h1>
+				<div class="footerwidgets">
+					<div class="widget textwidget">
+						<h1 class="widgettitle">TEXT WIDGET</h1>
+						<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+					</div>
+					<div class="widget twitterwidget">
+						<h1 class="widgettitle">TWITTER WIDGET</h1>
+						<p class="tweet"><span class="at">@ericafustero</span> Why thank you. Your work looks awesome by the way! <span class="at">@treemelody</span></p>
+						<p class="tweetdate">19 days ago</p>
+						<p class="tweet"><span class="at">@roymarvelous</span> You can seek a refund through TF if it is not as advertised - but it is :)</p>
+						<p class="tweetdate">21 days ago</p>
+					</div>
+					<div class="widget flickrwidget">
+						<h1 class="widgettitle">FLICKR WIDGET</h1>
+						<div class="flickr-icons">
+							<a href="#"><img class="flickr-icon" src="img/flickr/icon1.jpg" /></a>
+							<a href="#"><img class="flickr-icon" src="img/flickr/icon2.jpg" /></a>
+							<a href="#"><img class="flickr-icon" src="img/flickr/icon3.jpg" /></a>
+							<a href="#"><img class="flickr-icon" src="img/flickr/icon4.jpg" /></a>
+							<a href="#"><img class="flickr-icon" src="img/flickr/icon5.jpg" /></a>
+							<a href="#"><img class="flickr-icon" src="img/flickr/icon6.jpg" /></a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<hr class="footer-separation"/>
@@ -245,17 +265,16 @@
 				<div class="wrap">
 					<div class="newsletter">
 						<form method="post" action="#">
-							<input type="text" class="" name="newsmetter" placeholder="Enter email for newsletter"/>
-							<input type="submit"  name="envoyer" value="&gt;"/>
+							<input type="text" class="newsletter-input" name="newsmetter" placeholder="Enter email for newsletter"/><input type="submit" class="newsletter-submit" name="envoyer" value=" &gt; "/>
 						</form>
 					</div>
 					<div class="social-buttons">
 						<ul>
-							<li><a href="#"><span class="icon-facebook2"></span></a></li>
-							<li><a href="#"><span class="icon-twitter"></span></a></li>
-							<li><a href="#"><span class="icon-google-plus"></span></a></li>
-							<li><a href="#"><span class="icon-linkedin2"></span></a></li>
-							<li><a href="#"><span class="icon-flickr"></span></a></li>
+							<li><a href="#" class="social-button"><span class="icon-facebook2"></span></a></li>
+							<li><a href="#" class="social-button"><span class="icon-twitter"></span></a></li>
+							<li><a href="#" class="social-button"><span class="icon-google-plus"></span></a></li>
+							<li><a href="#" class="social-button"><span class="icon-linkedin2"></span></a></li>
+							<li><a href="#" class="social-button"><span class="icon-flickr"></span></a></li>
 						</ul>
 					</div>
 				</div>
