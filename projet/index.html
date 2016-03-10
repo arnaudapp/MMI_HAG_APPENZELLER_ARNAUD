@@ -7,6 +7,12 @@
 		<link rel="stylesheet" href="style/reset.css">
 		<link rel="stylesheet" href="style/style.css">
 		<script type="text/javascript">
+			function menuin(el){
+				el.style.fontSize = "110%";
+			}
+			function menuout(el){
+				el.style.fontSize = "100%";
+			}
 			function sliderin(el){
 				var position = document.getElementById(el);
 				position.style.backgroundColor = "#57c5a0";
@@ -40,27 +46,27 @@
 					<nav class="mainmenu">
 						<ul>
 							<li>
-								<a class="lienmenu" href="#">Home</a>
+								<a class="lienmenu" href="#" onmousedown="menuin(this)" onmouseup="menuout(this)">Home</a>
 							</li>
 							<li>
-								<a class="lienmenu" href="#">Products</a>
+								<a class="lienmenu" href="#" onmousedown="menuin(this)" onmouseup="menuout(this)">Products</a>
 							</li>
 							<li>
-								<a class="lienmenu" href="#">About</a>
+								<a class="lienmenu" href="#" onmousedown="menuin(this)" onmouseup="menuout(this)">About</a>
 							</li>
 							<li>
-								<a class="lienmenu" href="#">Pages</a>
+								<a class="lienmenu" href="#" onmousedown="menuin(this)" onmouseup="menuout(this)">Pages</a>
 							</li>
 							<li>
-								<a class="lienmenu" href="#">Blog</a>
+								<a class="lienmenu" href="#" onmousedown="menuin(this)" onmouseup="menuout(this)">Blog</a>
 							</li>
 							<li>
-								<a class="lienmenu" href="#">Contact</a>
+								<a class="lienmenu" href="#" onmousedown="menuin(this)" onmouseup="menuout(this)">Contact</a>
 							</li>
 						</ul>
 					</nav>
 					<div class="cart">
-						<a href="#"><span class="icon-cart"></span><span class="user-box cart-counter">0</span></a>
+						<a href="#"><span class="icon-cart"></span><span class="user-box cart-counter">&nbsp;0&nbsp;</span></a>
 					</div>
 					<div class="wishlist">
 						<a href="#"><span class="icon-star-empty"></span><span class="user-box wishlist-counter">30</span></a>
@@ -131,8 +137,20 @@
 						<div class="prix">
 							<p>$145,99</p>
 						</div>
-						<div class="product-name">
-							<a href="#">Even&amp;Odd</a>
+						<div class="product-links">
+							<div class="product-name">
+								<a href="#">Even&amp;Odd</a>
+							</div>
+							<div class="product-menu">
+								<nav class="slider-action">
+									<ul>
+										<li><a class="slider-action-icon" href="#"><span class="icon-eye"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-star-empty"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-share"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-cart"></span></a></li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 					<div class="product">
@@ -143,8 +161,20 @@
 						<div class="onsale_box">
 							<p>ON SALE!</p>
 						</div>
-						<div class="product-name">
-							<a href="#">Even&amp;Odd</a>
+						<div class="product-links">
+							<div class="product-name">
+								<a href="#">Even&amp;Odd</a>
+							</div>
+							<div class="product-menu">
+								<nav class="slider-action">
+									<ul>
+										<li><a class="slider-action-icon" href="#"><span class="icon-eye"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-star-empty"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-share"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-cart"></span></a></li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 					<div class="product">
@@ -152,8 +182,20 @@
 						<div class="prix">
 							<p>$145,99</p>
 						</div>
-						<div class="product-name">
-							<a href="#">Buffalo Decolletè</a>
+						<div class="product-links">
+							<div class="product-name">
+								<a href="#">Buffalo Decolletè</a>
+							</div>
+							<div class="product-menu">
+								<nav class="slider-action">
+									<ul>
+										<li><a class="slider-action-icon" href="#"><span class="icon-eye"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-star-empty"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-share"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-cart"></span></a></li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -173,8 +215,20 @@
 						<div class="prix">
 							<p>$145,99</p>
 						</div>
-						<div class="product-name">
-							<a href="#">Even&amp;Odd</a>
+						<div class="product-links">
+							<div class="product-name">
+								<a href="#">Even&amp;Odd</a>
+							</div>
+							<div class="product-menu">
+								<nav class="slider-action">
+									<ul>
+										<li><a class="slider-action-icon" href="#"><span class="icon-eye"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-star-empty"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-share"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-cart"></span></a></li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 					<div class="product">
@@ -182,8 +236,20 @@
 						<div class="prix">
 							<p>$145,99</p>
 						</div>
-						<div class="product-name">
-							<a href="#">Even&amp;Odd</a>
+						<div class="product-links">
+							<div class="product-name">
+								<a href="#">Even&amp;Odd</a>
+							</div>
+							<div class="product-menu">
+								<nav class="slider-action">
+									<ul>
+										<li><a class="slider-action-icon" href="#"><span class="icon-eye"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-star-empty"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-share"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-cart"></span></a></li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 					<div class="product">
@@ -194,8 +260,20 @@
 						<div class="outofstock">
 							<p>OUT OF STOCK</p>
 						</div>
-						<div class="product-name">
-							<a href="#">Buffalo Decolletè</a>
+						<div class="product-links">
+							<div class="product-name">
+								<a href="#">Buffalo Decolletè</a>
+							</div>
+							<div class="product-menu">
+								<nav class="slider-action">
+									<ul>
+										<li><a class="slider-action-icon" href="#"><span class="icon-eye"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-star-empty"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-share"></span></a></li>
+										<li><a class="slider-action-icon" href="#"><span class="icon-cart"></span></a></li>
+									</ul>
+								</nav>
+							</div>
 						</div>
 					</div>
 				</div>

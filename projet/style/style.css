@@ -155,6 +155,7 @@ a:hover{
 	display: inline-block;
 	font-weight: bold;
 	color: black;
+	transition: all ease 0.2s;
 }
 .mainmenu ul li:last-child{
 	border-right: 1px solid #eeeeee;
@@ -222,9 +223,7 @@ a:hover{
 .slider-description{
 	font-size: 1.125rem;
 	line-height: 20px;
-}
-.slider-action{
-	margin-top: 15px;
+	margin-bottom: 15px;
 }
 .slider-action-icon{
 	width: 40px;
@@ -317,7 +316,6 @@ a:hover{
 	float: right;
 	margin: 2rem 0;
 }
-
 .showall a{
 	color: #bcb5a7;
 	padding: 0.5rem 1rem;
@@ -357,6 +355,28 @@ a:hover{
 }
 .product-name a{
 	color: black;
+}
+.product-menu{
+	overflow: hidden;
+	display: block;
+	margin-left: 87px;
+	line-height: 3rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+	position: relative;
+    top: 48px;
+}
+.product-links{
+	overflow: hidden;
+	height: 48px;
+}
+.product-links:hover > .product-name{
+	display: none;
+}
+.product-links:hover > .product-menu{
+	display: block;
+	top:0px;
+	transition: top ease 0.2s;
 }
 .onsale_box{
 	width: 67px;
@@ -498,6 +518,11 @@ footer{
 	padding: 0.7rem;
 	background-color: #2e2e2e;
 	color: #7d7d7d;
+}
+.social-button:hover{
+	color: white;
+	-webkit-transition: color ease 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: color ease 0.2s;
 }
 .bottombar{
 	overflow: hidden;
